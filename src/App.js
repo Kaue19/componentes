@@ -1,10 +1,10 @@
-import Header from "./components/Header/header";
 import "./app.css"
+import Formulario from "./components/formulario/formulario";
 
 function App() {
   return (
    <>
-   <Header cor="darkorchid"/>
+   <Formulario/>
    </>
   );
 }
