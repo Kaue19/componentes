@@ -1,7 +1,7 @@
 import { Box, Button, Checkbox, Container, FormControlLabel, Grid, Link, TextField, Typography } from '@mui/material';
 import React from 'react';
 
-function Formulario() {
+function Formulario(props) {
   return (
     <>
     <Container component="main" maxWidth="xs">
@@ -12,7 +12,7 @@ function Formulario() {
         alignItems: 'center',
     }}>
         <Typography component="h2" variant="h4">
-            Formulário de login
+            {props.titulo}
         </Typography>
         <Box component="form" sx={{ mt: 1}}>
             <TextField fullWidth margin="normal" label="Email" name="email" variant="filled"/>
